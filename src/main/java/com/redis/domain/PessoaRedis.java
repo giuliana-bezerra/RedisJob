@@ -7,14 +7,11 @@ import org.springframework.data.redis.core.RedisHash;
 
 @RedisHash("Pessoa")
 public class PessoaRedis implements Serializable {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private int id;
 	private String nome;
 	private String email;
-	private Date dataNascimento;
+	private String dataNascimento;
 	private int idade;
 
 	public int getId() {
@@ -41,11 +38,11 @@ public class PessoaRedis implements Serializable {
 		this.email = email;
 	}
 
-	public Date getDataNascimento() {
+	public String getDataNascimento() {
 		return dataNascimento;
 	}
 
-	public void setDataNascimento(Date dataNascimento) {
+	public void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 
