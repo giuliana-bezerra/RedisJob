@@ -1,7 +1,6 @@
 package com.redis.domain;
 
 import java.io.Serializable;
-import java.util.Date;
 
 import org.springframework.data.redis.core.RedisHash;
 
